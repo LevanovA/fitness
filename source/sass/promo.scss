@@ -1,0 +1,208 @@
+.promo {
+  max-width: 1160px;
+  margin: 0 auto;
+  padding-bottom: 94px;
+
+  color: $complementary-color;
+
+  background-image: url(../img/promo-men.jpg);
+  background-repeat: no-repeat;
+  background-position-x: 459px;
+  background-position-y: 22px;
+  background-size: 500px 556px;
+}
+
+.promo__info {
+  display: flex;
+  justify-content: space-between;
+
+  font-family: "Bebas Neue", Arial, sans-serif;
+  font-size: 26px;
+  line-height: 26px;
+  letter-spacing: 0.02em;
+}
+
+.promo__info p {
+  margin: 0;
+}
+
+.promo__info a {
+  text-decoration: none;
+  color: $complementary-color;
+  letter-spacing: 0.03em;
+}
+
+.promo__box {
+  display: flex;
+  justify-content: space-between;
+
+  padding-top: 113px;
+}
+
+.promo__name {
+  width: 396px;
+  font-family: "Bebas Neue", Arial, sans-serif;
+}
+
+.promo__name p {
+  margin: 0;
+  margin-bottom: 13px;
+
+  font-size: 49px;
+  line-height: 49px;
+  letter-spacing: 2px;
+  text-align: right;
+}
+
+.promo__name h1 {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: flex-end;
+
+  margin: 0;
+  margin-bottom: 57px;
+}
+
+.promo__name h1 b {
+  font-size: 109px;
+  line-height: 109px;
+  letter-spacing: 0.03em;
+  text-align: right;
+}
+
+.promo__name h1 span {
+  width: 115px;
+
+  margin-top: 18px;
+  margin-right: 33px;
+
+  font-family: "Roboto Condensed", Arial, sans-serif;
+  font-size: 14px;
+  line-height: 21px;
+  font-weight: 200;
+  text-align: end;
+}
+
+.promo__social {
+  align-self: flex-end;
+}
+
+.promo__social a {
+  display: block;
+
+  margin-top: 19px;
+
+  font-family: "Roboto Condensed", Arial, sans-serif;
+  font-size: 12px;
+  line-height: 14px;
+  color: $complementary-color;
+  text-decoration: none;
+  text-transform: uppercase;
+}
+
+.promo__button {
+  margin-left: auto;
+}
+
+@media (max-width: $tablet-width) {
+
+  .promo {
+    max-width: 678px;
+    padding-bottom: 106px;
+
+    background-image: url(../img/promo-tablet.jpg);
+    background-position-x: 353px;
+    background-position-y: 44px;
+    background-size: 324px 390px;
+  }
+
+  .promo__info {
+    font-size: 24px;
+    line-height: 24px;
+  }
+
+  .promo__box {
+    padding-top: 74px;
+  }
+
+  .promo__name {
+    width: 324px;
+  }
+
+  .promo__name p {
+    margin-bottom: 6px;
+
+    font-size: 34px;
+    line-height: 34px;
+    letter-spacing: 0.03em;
+  }
+
+  .promo__name h1 {
+    margin-bottom: 40px;
+  }
+
+  .promo__name h1 b {
+    font-size: 86px;
+    line-height: 86px;
+  }
+
+  .promo__name h1 span {
+    width: 111px;
+
+    margin-top: 7px;
+    margin-right: 29px;
+  }
+
+  .promo__social {
+    display: none;
+  }
+
+  .promo__button {
+    width: 187px;
+  }
+}
+
+@media (max-width: $mobile-width) {
+
+  .promo {
+    max-width: 290px;
+    padding-bottom: 81px;
+
+    background-image: none;
+  }
+
+  .promo__info {
+    font-size: 20px;
+    line-height: 20px;
+  }
+
+  .promo__name {
+    width: 290px;
+  }
+
+  .promo__name p {
+    margin-bottom: 11px;
+
+    font-size: 28px;
+    line-height: 28px;
+  }
+
+  .promo__name h1 {
+    margin-bottom: 43px;
+  }
+
+  .promo__name h1 b {
+    font-size: 78px;
+    line-height: 78px;
+  }
+
+  .promo__name h1 span {
+    margin-top: 3px;
+    margin-right: 12px;
+  }
+
+  .promo__button {
+    width: 290px;
+  }
+}
+

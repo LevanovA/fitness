@@ -1,13 +1,65 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ru">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
-  <title>Стартовый шаблон</title>
-  <link rel="stylesheet" href="css/style.css">
+  <title>Фитнес Supergym</title>
+  <link rel="stylesheet" href="css/style.min.css">
 </head>
 <body>
-  <h1>Добро пожаловать в Лигу А.</h1>
+  <header class="page-header">
+    <section class="promo">
+      <div class="promo__info">
+        <p>Supergym</p>
+        <a href="tel:+8-800-555-55-55">8-800-555-55-55</a>
+      </div>
+      <div class="promo__box">
+        <div class="promo__name">
+          <p>Омск</p>
+          <h1><b>Фитнес</b><span>Тренажёрный зал Групповые занятия Кардио-зона</span><b>центр</b></h1>
+          <a class="promo__button button" href="#">Купить абонемент</a>
+        </div>
+        <div class="promo__social">
+          <a href="#" class="promo__icon promo__icon--fb"><span class="visually-hidden">Перейти на фейсбук</span>fb</a>
+          <a href="#" class="promo__icon promo__icon--vk"><span class="visually-hidden">Перейти на вконтакте</span>vk</a>
+          <a href="#" class="promo__icon promo__icon--ig"><span class="visually-hidden">Перейти на инстаграм</span>ig</a>
+        </div>
+      </div>
+    </section>
+  </header>
+  <main class="page-main">
+    <section class="gym">
+      <div class="gym__box">
+        <div class="gym__about">
+          <h2>Тренажерный зал</h2>
+          <p>Просторный зал площадью 900 кв/м</p>
+          <div class="gym__description">
+            <p>Supergym – самый большой фитнес центр за Уралом
+              и идеальное место для укрепления тела и здоровья.
+              Тренажерный зал оснащен всем необходимым
+              современным оборудованием для всех спортсменов.
+            </p>
+            <p>
+              В зале расположены отдельная зона для Crossfit и
+              кардио-зона с 40 тренажерами. Также в фитнес
+              центре есть несколько оборудованных залов для
+              различных видов групповых занятий.
+            </p>
+          </div>
+        </div>
+        <div class="gym__picture">
+          <picture>
+            <source media="(max-width: 767px)" srcset="img/gym-view-mobile.jpg">
+            <source media="(max-width: 1199px)" srcset="img/gym-view-tablet.jpg">
+            <img src="img/gym-view-desktop.jpg" alt="Тренажерный зал" width="660" height="401">
+          </picture>
+        </div>
+        <div class="gym__video">
+          <div class="gym__button"></div>
+        </div>
+      </div>
+    </section>
+  </main>
 </body>
 </html>
