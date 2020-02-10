@@ -1,0 +1,255 @@
+.announcement {
+  padding-top: 36px;
+  padding-bottom: 120px;
+}
+
+.announcement__box {
+  display: flex;
+  max-width: 1160px;
+  margin: 0 auto;
+}
+
+.announcement__time {
+  width: 500px;
+
+  color: $complementary-color;
+
+  background-color: #ED0233;
+}
+
+.announcement__boy {
+  width: 660px;
+  height: 500px;
+
+  background-color: $main-color;
+  background-image: url(../img/announcement-boy.jpg);
+  background-repeat: no-repeat;
+  background-size: 660px 500px;
+}
+
+.announcement__name {
+  display: flex;
+  justify-content: space-between;
+
+  width: 343px;
+  margin: 0 auto;
+  margin-top: 83px;
+  margin-bottom: 9px;
+}
+
+.announcement__name h2 {
+  margin: 0;
+
+  font-family: "Bebas Neue", Arial, sans-serif;
+  font-size: 90px;
+  line-height: 90px;
+  letter-spacing: 0.03em;
+}
+
+.announcement__data table {
+  border-collapse: collapse;
+  margin-top: -3px;
+}
+
+.announcement__data table:first-child {
+  width: 64px;
+  margin-bottom: 17px;
+}
+
+.announcement__data th {
+  font-size: 18px;
+  line-height: 27px;
+  font-weight: normal;
+  border-bottom: 1px solid $complementary-color;
+  text-align: left;
+  padding-bottom: 5px;
+}
+
+.announcement__data td:first-child {
+  font-weight: bold;
+  font-size: 40px;
+  line-height: 45px;
+}
+
+.announcement__data td:last-child{
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 17px;
+}
+
+.announcement__data table:last-child td{
+  font-weight: bold;
+  font-size: 40px;
+  line-height: 42px;
+}
+
+.announcement__time p {
+  width: 343px;
+  margin: 0 auto;
+  margin-bottom: 45px;
+
+  font-size: 18px;
+  line-height: 27px;
+}
+
+.announcement__button {
+  margin: 0 auto;
+}
+
+@media (max-width: $tablet-width) {
+
+  .announcement {
+    padding-top: 46px;
+    padding-bottom: 100px;
+  }
+
+  .announcement__box {
+    max-width: 678px;
+  }
+
+  .announcement__time {
+    width: 292px;
+  }
+
+  .announcement__boy {
+    width: 386px;
+    height: 292px;
+
+    background-image: url(../img/announcement-boy.jpg);
+    background-repeat: no-repeat;
+    background-size: 386px 292px;
+  }
+
+  .announcement__name {
+    width: 202px;
+    margin-top: 50px;
+    margin-bottom: 0;
+  }
+
+  .announcement__name h2 {
+    font-size: 52px;
+    line-height: 52px;
+  }
+
+  .announcement__data table {
+    margin-top: -4px;
+  }
+
+  .announcement__data table:first-child {
+    width: 42px;
+    margin-bottom: 10px;
+  }
+
+  .announcement__data th {
+    font-size: 12px;
+    line-height: 18px;
+    padding-bottom: 1px;
+  }
+
+  .announcement__data td:first-child {
+    font-size: 24px;
+    line-height: 25px;
+  }
+
+  .announcement__data td:last-child{
+    font-size: 10px;
+    line-height: 12px;
+  }
+
+  .announcement__data table:last-child td{
+    font-size: 24px;
+    line-height: 25px;
+  }
+
+  .announcement__time p {
+    width: 202px;
+    margin-bottom: 30px;
+
+    font-size: 12px;
+    line-height: 18px;
+  }
+
+  .announcement__button {
+    width: 204px;
+    height: 39px;
+  }
+}
+
+@media (max-width: $mobile-width) {
+  .announcement {
+    padding-top: 70px;
+    padding-bottom: 70px;
+  }
+
+  .announcement__box {
+    display: block;
+    max-width: 290px;
+  }
+
+  .announcement__time {
+    width: 290px;
+    padding-top: 50px;
+    padding-bottom: 51px;
+  }
+
+  .announcement__boy {
+    width: 290px;
+    height: 292px;
+
+    background-image: url(../img/announcement-boy-mobile.jpg);
+    background-size: 290px 292px;
+  }
+
+  .announcement__name {
+    width: 202px;
+    margin-top: 0;
+  }
+
+  // .announcement__name h2 {
+  //   font-size: 52px;
+  //   line-height: 52px;
+  // }
+
+  // .announcement__data table {
+  //   margin-top: -4px;
+  // }
+
+  // .announcement__data table:first-child {
+  //   width: 42px;
+  //   margin-bottom: 10px;
+  // }
+
+  // .announcement__data th {
+  //   font-size: 12px;
+  //   line-height: 18px;
+  //   padding-bottom: 1px;
+  // }
+
+  // .announcement__data td:first-child {
+  //   font-size: 24px;
+  //   line-height: 25px;
+  // }
+
+  // .announcement__data td:last-child{
+  //   font-size: 10px;
+  //   line-height: 12px;
+  // }
+
+  // .announcement__data table:last-child td{
+  //   font-size: 24px;
+  //   line-height: 25px;
+  // }
+
+  // .announcement__time p {
+  //   width: 202px;
+  //   margin-bottom: 30px;
+
+  //   font-size: 12px;
+  //   line-height: 18px;
+  // }
+
+  // .announcement__button {
+  //   width: 204px;
+  //   height: 39px;
+  // }
+}

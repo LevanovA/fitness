@@ -1,0 +1,278 @@
+.subscription {
+  padding-top: 118px;
+  padding-bottom: 205px;
+
+  background-image: url(../img/subscription-barbells-desktop.png), linear-gradient(#F8F9FC 91%, #FFFFFF 91%);
+
+  background-repeat: no-repeat;
+  background-position-x: right;
+  background-position-y: 508px, top;
+}
+
+.subscription h2 {
+  margin: 0;
+  margin-bottom: 35px;
+
+  font-family: "Bebas Neue", Arial, sans-serif;
+  font-size: 49px;
+  line-height: 49px;
+  letter-spacing: 0.03em;
+  text-align: center;
+}
+
+.subscription__months {
+  display: flex;
+  justify-content: space-between;
+
+  width: 341px;
+
+  margin: 0 auto;
+  margin-bottom: 40px;
+
+  font-family: "Roboto Condensed", Arial, sans-serif;
+  font-size: 20px;
+  line-height: 30px;
+  color: rgba(16, 38, 84, 0.5);
+
+  border-bottom: 2px solid rgba(120, 120, 120, 0.2);
+}
+
+.subscription__months p {
+  margin: 0;
+  margin-bottom: -2px;
+  padding-bottom: 10px;
+  cursor: pointer;
+}
+
+.subscription__months--active {
+  border-bottom: 2px solid #D10A42;
+}
+
+.subscription__plans {
+  display: flex;
+  justify-content: space-between;
+
+  width: 1160px;
+
+  margin: 0 auto;
+}
+
+.subscription__item {
+  position: relative;
+  width: 360px;
+
+  padding-top: 55px;
+  padding-bottom: 60px;
+  background-color: $complementary-color;
+
+  border: 7px solid transparent;
+  box-sizing: border-box;
+  cursor: pointer;
+  z-index: 1;
+
+  &:hover {
+    border-width: 7px;
+    border-style: solid;
+    border-image:
+    linear-gradient(-45deg, #00359F 20%, #D10A42 80%) 10;
+  }
+}
+
+.subscription__item h3 {
+  margin: 0;
+  margin-bottom: 10px;
+
+  font-family: "Roboto Condensed", Arial, sans-serif;
+  font-weight: bold;
+  font-size: 26px;
+  line-height: 29px;
+  text-align: center;
+}
+
+.subscription__description {
+  position: relative;
+  text-align: center;
+  margin-bottom: 53px;
+}
+
+.subscription__description p {
+  margin: 0;
+}
+
+.subscription__description p:first-child {
+  margin-bottom: 83px;
+
+  font-size: 16px;
+  line-height: 24px;
+  color: #495A7D;
+}
+
+.subscription__description p:last-child {
+  position: relative;
+
+  font-size: 60px;
+  line-height: 90%;
+  font-weight: bold;
+  color: #103AAE;
+
+  z-index: 50;
+}
+
+.subscription__description::before {
+  content: "";
+
+  position: absolute;
+  top: 35px;
+  left: 70px;
+
+  font-size: 100px;
+  line-height: 150px;
+  font-weight: bold;
+  color: rgba(232, 232, 232, 0.48);
+  text-align: center;
+  text-transform: uppercase;
+  text-decoration: none;
+}
+
+.subscription__description span {
+  display: inline-block;
+  width: 30px;
+  height: 42px;
+
+  margin-left: 15px;
+
+  background-image: url(../img/subscription-ruble.svg);
+  background-repeat: no-repeat;
+}
+
+.subscription__description--coach::before {
+  content: "5000";
+}
+
+.subscription__description--day::before {
+  content: "1700";
+}
+
+.subscription__description--full::before {
+  content: "2700";
+}
+
+.subscription__button {
+  margin: 0 auto;
+}
+
+@media (max-width: $tablet-width) {
+
+  .subscription {
+    padding-top: 100px;
+    padding-bottom: 113px;
+
+    background-image: url(../img/subscription-barbells-tablet.png), linear-gradient(#F8F9FC 97%, #FFFFFF 97%);
+    background-position-y: 1460px, top;
+  }
+
+  .subscription h2 {
+    margin-bottom: 30px;
+
+    font-size: 42px;
+    line-height: 42px;
+  }
+
+  .subscription__months {
+    width: 333px;
+    margin-bottom: 45px;
+
+    font-size: 18px;
+    line-height: 27px;
+  }
+
+  .subscription__plans {
+    display: block;
+    width: 442px;
+  }
+
+  .subscription__item {
+    width: 100%;
+    margin-bottom: 41px;
+  }
+
+  .subscription__description::before {
+    top: 35px;
+    left: 111px;
+  }
+}
+
+@media (max-width: $mobile-width) {
+
+  .subscription {
+    padding-top: 70px;
+    padding-bottom: 35px;
+
+    background-image: none;
+    background-color: #F8F9FC;
+  }
+
+  .subscription h2 {
+    margin-bottom: 23px;
+
+    font-size: 32px;
+    line-height: 32px;
+  }
+
+  .subscription__months {
+    width: 290px;
+    margin-bottom: 35px;
+
+    font-size: 16px;
+    line-height: 24px;
+  }
+
+  .subscription__plans {
+    width: 290px;
+  }
+
+  .subscription__item {
+    width: 100%;
+
+    padding-top: 44px;
+    padding-bottom: 47px;
+    margin-bottom: 35px;
+  }
+
+  .subscription__item h3 {
+    font-size: 22px;
+    line-height: 24px;
+  }
+
+  .subscription__description {
+    margin-bottom: 31px;
+  }
+
+  .subscription__description p:first-child {
+    margin-bottom: 53px;
+
+    font-size: 16px;
+    line-height: 24px;
+  }
+
+  .subscription__description p:last-child {
+    font-size: 48px;
+    line-height: 72px;
+  }
+
+  .subscription__description::before {
+    top: 33px;
+    left: 57px;
+
+    font-size: 80px;
+    line-height: 120px;
+  }
+
+  .subscription__description span {
+    width: 24px;
+    height: 33px;
+
+    margin-left: 10px;
+    background-size: 24px 33px;
+  }
+}

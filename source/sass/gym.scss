@@ -1,5 +1,6 @@
 .gym {
   padding-top: 120px;
+  padding-bottom: 120px;
 }
 
 .gym__box {
@@ -82,6 +83,7 @@
 
   .gym {
     padding-top: 100px;
+    padding-bottom: 100px;
   }
 
   .gym__box {
@@ -148,6 +150,7 @@
 @media (max-width: $mobile-width) {
   .gym {
     padding-top: 70px;
+    padding-bottom: 70px;
   }
 
   .gym__box {
