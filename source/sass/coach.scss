@@ -1,0 +1,241 @@
+.coach {
+  padding-bottom: 120px;
+}
+
+.coach__box {
+  position: relative;
+  width: 1160px;
+  margin: 0 auto;
+}
+
+.coach__box h2 {
+  margin: 0;
+  margin-bottom: 52px;
+
+  font-family: "Bebas Neue", Arial, sans-serif;
+  font-size: 49px;
+  line-height: 49px;
+  letter-spacing: 0.03em;
+}
+
+.coach__list {
+  display: flex;
+  justify-content: space-between;
+  overflow: hidden;
+}
+
+.coach__item {
+  position: relative;
+  flex-grow: 0;
+  flex-shrink: 0;
+
+  width: 260px;
+  height: 294px;
+
+  margin-left: 40px;
+  overflow: hidden;
+  cursor: pointer;
+}
+
+.coach__item:first-child {
+  margin-left: 0;
+}
+
+.coach__img p {
+  margin-top: -56px;
+
+  font-weight: bold;
+  font-size: 18px;
+  line-height: 27px;
+  color: $complementary-color;
+  text-align: center;
+}
+
+.coach__overlay {
+  position: absolute;
+  top: 0;
+  left: -270px;
+  z-index: 50;
+  width: 260px;
+
+  padding-top: 54px;
+  padding-bottom: 55px;
+  color: $complementary-color;
+  background-color: rgba(16, 38, 84, 0.89);
+}
+
+.coach__item:hover .coach__overlay {
+  left: 0;
+  transition: 0.5s;
+}
+
+.coach__item:hover .coach__img p {
+  margin-top: 0;
+  transition: 0.5s;
+}
+
+.coach__overlay h3 {
+  margin: 0;
+  font-size: 18px;
+  line-height: 22px;
+  text-align: center;
+}
+
+.coach__overlay p {
+  margin: 0;
+  margin-bottom: 33px;
+  font-size: 16px;
+  line-height: 24px;
+  font-weight: 300;
+  text-align: center;
+}
+
+.coach__overlay ul {
+  width: 158px;
+  margin: 0 auto;
+}
+
+.coach__overlay li {
+  margin-bottom: 13px;
+
+  font-size: 14px;
+  line-height: 21px;
+}
+
+.coach__button {
+  position: absolute;
+  top: 237px;
+
+  width: 22px;
+  height: 22px;
+  transform: rotate(45deg);
+
+  background-color: transparent;
+
+  border: none;
+  cursor: pointer;
+  outline: none;
+}
+
+.coach__button--right {
+  left: 1190px;
+  border-top: 1px solid #AFAFAF;
+  border-right: 1px solid #AFAFAF;
+}
+
+.coach__button--left {
+  left: -52px;
+  border-bottom: 1px solid #AFAFAF;
+  border-left: 1px solid #AFAFAF;
+}
+
+@media (max-width: $tablet-width) {
+
+  .coach {
+    padding-bottom: 100px;
+  }
+
+  .coach__box {
+    width: 626px;
+  }
+
+  .coach__box h2 {
+    margin-bottom: 40px;
+
+    font-size: 42px;
+    line-height: 42px;
+    text-align: center;
+  }
+
+  .coach__item {
+    width: 268px;
+    height: 294px;
+
+    margin-left: 30px;
+  }
+
+  .coach__item img {
+    width: 268px;
+    height: 294px;
+  }
+
+  .coach__item:first-child {
+    margin-left: 30px;
+  }
+
+  .coach__item:last-child {
+    margin-right: 30px;
+  }
+
+  .coach__overlay {
+    width: 268px;
+  }
+
+  .coach__overlay ul {
+    width: 166px;
+  }
+
+  .coach__button {
+    top: 218px;
+  }
+
+  .coach__button--right {
+    left: 626px;
+  }
+
+  .coach__button--left {
+    left: -22px;
+  }
+}
+
+@media (max-width: $mobile-width) {
+
+  .coach {
+    padding-bottom: 70px;
+  }
+
+  .coach__box {
+    width: 286px;
+  }
+
+  .coach__box h2 {
+    margin-bottom: 42px;
+
+    font-size: 32px;
+    line-height: 32px;
+  }
+
+  .coach__item {
+    width: 226px;
+    height: 274px;
+  }
+
+  .coach__item img {
+    width: 226px;
+    height: 274px;
+  }
+
+  .coach__overlay {
+    width: 226px;
+    padding-top: 44px;
+  }
+
+  .coach__overlay ul {
+    width: 166px;
+  }
+
+  .coach__button {
+    top: 204px;
+
+    width: 15px;
+    height: 15px;
+  }
+
+  .coach__button--right {
+    left: 270px;
+  }
+
+  .coach__button--left {
+    left: 0;
+  }
+}
