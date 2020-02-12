@@ -1,0 +1,281 @@
+.sale {
+  padding-top: 120px;
+  padding-bottom: 118px;
+}
+
+.sale h2 {
+  margin: 0;
+  margin-bottom: 52px;
+
+  font-family: "Bebas Neue", Arial, sans-serif;
+  font-size: 49px;
+  line-height: 49px;
+  letter-spacing: 0.03em;
+  text-align: center;
+}
+
+.sale__box {
+  display: flex;
+  justify-content: space-between;
+
+  width: 1160px;
+  margin: 0 auto;
+}
+
+.sale__offer {
+  display: flex;
+}
+
+.sale__description {
+  width: 280px;
+  padding-top: 40px;
+  color: $complementary-color;
+  background-color: #ED0233;
+}
+
+.sale__description h3 {
+  width: 190px;
+  margin: 0 auto;
+
+  font-weight: bold;
+  font-size: 28px;
+  line-height: 28px;
+}
+
+.sale__description b {
+  display: block;
+
+  width: 190px;
+  margin: 0 auto;
+  margin-bottom: 13px;
+
+  font-weight: bold;
+  font-size: 70px;
+  line-height: 80px;
+}
+
+.sale__description p {
+  width: 190px;
+  margin: 0 auto;
+  margin-bottom: 189px;
+
+  font-size: 18px;
+  line-height: 25px;
+}
+
+.sale__description a {
+  display: block;
+
+  width: 80px;
+  margin-left: 45px;
+
+  font-weight: bold;
+  font-size: 14px;
+  line-height: 16px;
+  letter-spacing: 0.05em;
+  color: $complementary-color;
+  text-transform: uppercase;
+  text-decoration: none;
+
+  border-bottom: 1px solid $complementary-color;
+}
+
+.sale__photo {
+  width: 280px;
+  height: 462px;
+
+  background-image: url(../img/sale-desktop.jpg);
+  background-repeat: no-repeat;
+  background-size: 280px 462px;
+}
+
+.sale__actions {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+
+  width: 560px;
+}
+
+.sale__item {
+  padding-top: 18px;
+  padding-bottom: 29px;
+
+  border-width: 7px;
+  border-style: solid;
+  border-image: linear-gradient(-45deg, #00359F 20%, #D10A42 80%) 10;
+}
+
+.sale__item h3 {
+  margin: 0;
+  margin-left: 28px;
+  margin-bottom: 3px;
+
+  font-weight: bold;
+  font-size: 26px;
+  line-height: 39px;
+}
+
+.sale__item p {
+  margin: 0;
+  margin-left: 28px;
+  margin-bottom: 71px;
+
+  font-size: 16px;
+  line-height: 22px;
+}
+
+.sale__item a {
+  display: block;
+
+  width: 70px;
+  margin-left: 28px;
+
+  font-weight: bold;
+  font-size: 12px;
+  line-height: 14px;
+  letter-spacing: 0.05em;
+  color: $main-color;
+  text-transform: uppercase;
+  text-decoration: none;
+
+  border-bottom: 1px solid $main-color;
+}
+
+@media (max-width: $tablet-width) {
+
+  .sale {
+    padding-top: 100px;
+    padding-bottom: 98px;
+  }
+
+  .sale h2 {
+    margin-bottom: 41px;
+
+    font-size: 42px;
+    line-height: 42px;
+  }
+
+  .sale__box {
+    display: block;
+
+    width: 678px;
+  }
+
+  .sale__offer {
+    margin-bottom: 30px;
+  }
+
+  .sale__photo {
+    width: 399px;
+    height: 462px;
+
+    background-image: url(../img/sale-tablet.jpg);
+    background-size: 399px 462px;
+  }
+
+  .sale__actions {
+    flex-direction: row;
+    justify-content: space-between;
+
+    width: 678px;
+  }
+
+  .sale__item {
+    display: flex;
+    flex-direction: column;
+    width: 310px;
+  }
+
+  .sale__item p {
+    justify-self: flex-end;
+    margin-bottom: 50px;
+  }
+
+  .sale__item:first-child p {
+    width: 180px;
+  }
+
+  .sale__item a {
+    margin-top: auto;
+  }
+}
+
+@media (max-width: $mobile-width) {
+
+  .sale {
+    padding-top: 70px;
+    padding-bottom: 39px;
+  }
+
+  .sale h2 {
+    margin-bottom: 43px;
+
+    font-size: 32px;
+    line-height: 32px;
+  }
+
+  .sale__box {
+    width: 290px;
+  }
+
+  .sale__offer {
+    display: block;
+  }
+
+  .sale__description {
+    width: 100%;
+    padding-bottom: 45px;
+    text-align: center;
+  }
+
+  .sale__description b {
+    margin-bottom: 8px;
+  }
+
+  .sale__description p {
+    margin-bottom: 31px;
+  }
+
+  .sale__description a {
+    margin: 0 auto;
+  }
+
+  .sale__photo {
+    width: 290px;
+    height: 299px;
+
+    background-image: url(../img/sale-mobile.jpg);
+    background-size: 290px 299px;
+  }
+
+  .sale__actions {
+    display: block;
+    width: 100%;
+  }
+
+  .sale__item {
+    width: 100%;
+
+    margin-bottom: 30px;
+    padding-top: 29px;
+    padding-bottom: 39px;
+
+    text-align: center;
+    box-sizing: border-box;
+  }
+
+  .sale__item h3 {
+    margin-left: 0;
+  }
+
+  .sale__item p {
+    width: 160px;
+    margin: 0 auto;
+    margin-bottom: 28px;
+  }
+
+  .sale__item a {
+    margin: 0 auto;
+  }
+}
