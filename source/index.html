@@ -329,8 +329,75 @@
         <button class="comment__button comment__button--right" type="button"></button>
       </div>
     </section>
-    <section class="lesson"></section>
-    <section class="contact"></section>
+    <div class="page-main__container">
+      <section class="lesson">
+        <div class="lesson__box">
+          <h2>Бесплатное занятие</h2>
+          <form class="lesson__form" action="#">
+            <div class="lesson__item lesson__item--name">
+              <input type="text" name="name" id="lesson__name" placeholder="Имя" required="">
+              <label for="lesson__name" class="visually-hidden">Введите имя</label>
+            </div>
+            <div class="lesson__item lesson__item--tel">
+              <input type="tel" name="tel" id="lesson__tel" placeholder="Телефон" required="">
+              <label for="lesson__tel" class="visually-hidden">Введите телефон</label>
+            </div>
+            <input class="lesson__button button button--lesson" type="submit" value="Отправить">
+          </form>
+        </div>
+      </section>
+      <section class="contact">
+        <div class="contact__box">
+          <h2>Контакты</h2>
+          <div class="contact__list">
+            <div class="contact__item">
+              <h3>Адрес:</h3>
+              <p>г. Омск, ул. 60 лет Октября, 7</p>
+            </div>
+            <div class="contact__item">
+              <h3 class="contact__desktop">Телефон:</h3>
+              <a class="contact__desktop" href="tel:8-800-555-55-55">8-800-555-55-55</a>
+              <h3 class="contact__mobile">График работы:</h3>
+              <p class="contact__mobile">Пн-Вс: с 8:00 до 22:00</p>
+            </div>
+            <div class="contact__item">
+              <h3 class="contact__desktop">График работы:</h3>
+              <p class="contact__desktop">Пн-Вс: с 8:00 до 22:00</p>
+              <h3 class="contact__mobile">Телефон:</h3>
+              <a class="contact__mobile" href="tel:8-800-555-55-55">8-800-555-55-55</a>
+            </div>
+            <div class="contact__item">
+              <h3>Email:</h3>
+              <a href="mailto:omsk@supergym.ru">omsk@supergym.ru</a>
+            </div>
+          </div>
+          <div class="contact__vertical"></div>
+        </div>
+      </section>
+    </div>
   </main>
+  <footer class="page-footer">
+    <div class="page-footer__box">
+      <div class="page-footer__logo">
+        <a href="#">Supergym</a>
+      </div>
+      <nav class="menu">
+        <ul class="menu__box menu__box--left">
+          <li><a href="#">Услуги</a></li>
+          <li><a href="#">Абонементы</a></li>
+        </ul>
+        <ul class="menu__box menu__box--right">
+          <li><a href="#">Акции</a></li>
+          <li><a href="#">Тренеры</a></li>
+          <li><a href="#">Расписание</a></li>
+        </ul>
+      </nav>
+      <div class="page-footer__social">
+        <a href="#" class="page-footer__icon page-footer__icon--vk"><span class="visually-hidden">Перейти на вконтакте</span></a>
+        <a href="#" class="page-footer__icon page-footer__icon--inst"><span class="visually-hidden">Перейти на инстаграм</span></a>
+        <a href="#" class="page-footer__icon page-footer__icon--fb"><span class="visually-hidden">Перейти на фейсбук</span></a>
+      </div>
+    </div>
+  </footer>
 </body>
 </html>

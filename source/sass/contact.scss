@@ -1,0 +1,168 @@
+.contact {
+  width: 100%;
+  padding-top: 61px;
+  border-top: 1px solid #74819C;
+}
+
+.contact__box {
+  position: relative;
+  width: 404px;
+  margin-left: 120px;
+}
+
+.contact__box h2 {
+  margin: 0;
+  margin-bottom: 33px;
+
+  font-family: "Bebas Neue", Arial, sans-serif;
+  font-size: 49px;
+  line-height: 64px;
+  letter-spacing: 0.03em;
+}
+
+.contact__list {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.contact__item {
+  margin-bottom: 15px;
+}
+
+.contact__item:nth-child(2n+1) {
+  width: 170px;
+  margin-left: 4px;
+}
+
+.contact__item:nth-child(2n) {
+  width: 110px;
+}
+
+.contact__item h3 {
+  margin: 0;
+  margin-bottom: 3px;
+
+  font-weight: bold;
+  font-size: 16px;
+  line-height: 24px;
+}
+
+.contact__item p,
+.contact__item a {
+  margin: 0;
+  font-size: 14px;
+  line-height: 21px;
+}
+
+.contact__item a {
+  color: $main-color;
+  text-decoration: none;
+}
+
+.contact__vertical {
+  position: absolute;
+  top: 103px;
+  left: 234px;
+
+  width: 1px;
+  height: 102px;
+
+  background-color: #74819C;
+}
+
+.contact__mobile {
+  display: none;
+}
+
+@media (max-width: $tablet-width) {
+  .contact {
+    padding-top: 70px;
+    padding-bottom: 42px;
+    border-top: none;
+  }
+
+  .contact__box {
+    width: 502px;
+    margin: 0 auto;
+  }
+
+  .contact__box h2 {
+    font-size: 42px;
+    line-height: 42px;
+  }
+
+  .contact__list {
+    width: 456px;
+  }
+
+  .contact__item {
+    margin-bottom: 20px;
+  }
+
+  .contact__item:nth-child(2n+1) {
+    width: 218px;
+    margin-left: 0;
+  }
+
+  .contact__item:nth-child(2n) {
+    width: 142px;
+  }
+
+  .contact__item h3 {
+    margin-bottom: 5px;
+
+    font-size: 20px;
+    line-height: 30px;
+  }
+
+  .contact__item p,
+  .contact__item a {
+    font-size: 18px;
+    line-height: 27px;
+  }
+
+  .contact__vertical {
+    top: 82px;
+    left: 266px;
+    height: 129px;
+  }
+}
+
+@media (max-width: $mobile-width) {
+
+  .contact__box {
+    width: 290px;
+  }
+
+  .contact__box h2 {
+    font-size: 32px;
+    line-height: 32px;
+    margin-bottom: 34px;
+  }
+
+  .contact__list {
+    display: block;
+    width: 290px;
+  }
+
+  .contact__item:nth-child(2n+1) {
+    width: 100%;
+  }
+
+  .contact__item:nth-child(2n) {
+    width: 100%;
+  }
+
+  .contact__mobile {
+    display: block;
+  }
+
+  .contact__desktop {
+    display: none;
+  }
+
+  .contact__vertical {
+    display: none;
+  }
+}

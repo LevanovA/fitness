@@ -1,0 +1,133 @@
+.page-footer {
+  padding-top: 41px;
+  padding-bottom: 40px;
+  color: $complementary-color;
+  background-color: #030A1A;
+}
+
+.page-footer__box {
+  display: flex;
+  justify-content: space-between;
+
+  width: 1160px;
+  margin: 0 auto;
+}
+
+.page-footer__logo a {
+  font-family: "Bebas Neue", Arial, sans-serif;
+  font-size: 26px;
+  line-height: 26px;
+  letter-spacing: 0.02em;
+  color: $complementary-color;
+  text-decoration: none;
+
+  &:hover {
+    opacity: 0.5;
+  }
+}
+
+.page-footer__social {
+  display: flex;
+}
+
+.page-footer__icon {
+  margin-left: 25px;
+  background-repeat: no-repeat;
+
+  &:hover {
+    opacity: 0.7;
+  }
+}
+
+.page-footer__icon--vk {
+  width: 24px;
+  height: 13px;
+  margin-top: 5px;
+
+  background-image: url(../img/social-vk.svg);
+  background-size: 24px 13px;
+}
+
+.page-footer__icon--inst {
+  width: 24px;
+  height: 24px;
+
+  background-image: url(../img/social-inst.svg);
+  background-size: 24px 24px;
+}
+
+.page-footer__icon--fb {
+  width: 12px;
+  height: 24px;
+  background-image: url(../img/social-fb.svg);
+  background-size: 12px 24px;
+}
+
+@media (max-width: $tablet-width) {
+
+  .page-footer {
+    padding-top: 46px;
+    padding-bottom: 45px;
+  }
+
+  .page-footer__box {
+    width: 678px;
+  }
+
+  .page-footer__logo a {
+    font-size: 24px;
+    line-height: 24px;
+  }
+
+  .page-footer__icon {
+    margin-left: 20px;
+  }
+}
+
+@media (max-width: $mobile-width) {
+
+  .page-footer {
+    padding-top: 50px;
+    padding-bottom: 50px;
+  }
+
+  .page-footer__box {
+    display: block;
+    width: 290px;
+  }
+
+  .page-footer__logo {
+    margin-bottom: 14px;
+  }
+
+  .page-footer__logo a {
+    font-size: 20px;
+    line-height: 20px;
+  }
+
+  .page-footer__icon {
+    margin-left: 0;
+    margin-right: 36px;
+  }
+
+  .page-footer__icon--vk {
+    width: 32px;
+    height: 17px;
+
+    background-size: 32px 17px;
+  }
+
+  .page-footer__icon--inst {
+    width: 27px;
+    height: 27px;
+
+    background-size: 27px 27px;
+  }
+
+  .page-footer__icon--fb {
+    width: 14px;
+    height: 27px;
+
+    background-size: 14px 27px;
+  }
+}
