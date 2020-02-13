@@ -169,18 +169,6 @@
   margin: 0 auto;
 }
 
-// .subscription__plans--one {
-//   display: flex;
-// }
-
-// .subscription__plans--six {
-//   display: none;
-// }
-
-// .subscription__plans--twelve {
-//   display: none;
-// }
-
 .subscription__plans--active {
   display: flex;
 }
@@ -227,6 +215,14 @@
   .subscription__description::before {
     top: 35px;
     left: 111px;
+  }
+
+  .subscription__plans--active {
+    display: block;
+  }
+
+  .subscription__plans--none {
+    display: none;
   }
 }
 
