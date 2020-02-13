@@ -4,12 +4,19 @@
 
 .coach__box {
   position: relative;
+  max-width: 1275px;
+  margin: 0 auto;
+}
+
+.coach__list {
   width: 1160px;
   margin: 0 auto;
 }
 
 .coach__box h2 {
-  margin: 0;
+  width: 1160px;
+
+  margin: 0 auto;
   margin-bottom: 52px;
 
   font-family: "Bebas Neue", Arial, sans-serif;
@@ -18,31 +25,19 @@
   letter-spacing: 0.03em;
 }
 
-.coach__list {
-  display: flex;
-  justify-content: space-between;
-  overflow: hidden;
-}
-
 .coach__item {
   position: relative;
-  flex-grow: 0;
-  flex-shrink: 0;
 
   width: 260px;
   height: 294px;
 
-  margin-left: 40px;
   overflow: hidden;
   cursor: pointer;
 }
 
-.coach__item:first-child {
-  margin-left: 0;
-}
-
 .coach__img p {
-  margin-top: -56px;
+  margin-top: -50px;
+  margin-left: -40px;
 
   font-weight: bold;
   font-size: 18px;
@@ -102,6 +97,11 @@
   line-height: 21px;
 }
 
+.slick-slide {
+  width: 300px;
+  outline: none;
+}
+
 .coach__button {
   position: absolute;
   top: 237px;
@@ -109,6 +109,7 @@
   width: 22px;
   height: 22px;
   transform: rotate(45deg);
+  font-size: 0;
 
   background-color: transparent;
 
@@ -117,14 +118,14 @@
   outline: none;
 }
 
-.coach__button--right {
-  left: 1190px;
+.coach__button--next {
+  right: 5px;
   border-top: 1px solid #AFAFAF;
   border-right: 1px solid #AFAFAF;
 }
 
-.coach__button--left {
-  left: -52px;
+.coach__button--prev {
+  left: 5px;
   border-bottom: 1px solid #AFAFAF;
   border-left: 1px solid #AFAFAF;
 }
@@ -136,10 +137,11 @@
   }
 
   .coach__box {
-    width: 626px;
+    max-width: 678px;
   }
 
   .coach__box h2 {
+    width: 678px;
     margin-bottom: 40px;
 
     font-size: 42px;
@@ -147,24 +149,18 @@
     text-align: center;
   }
 
+  .coach__list {
+    width: 626px;
+  }
+
   .coach__item {
     width: 268px;
     height: 294px;
-
-    margin-left: 30px;
   }
 
   .coach__item img {
     width: 268px;
     height: 294px;
-  }
-
-  .coach__item:first-child {
-    margin-left: 30px;
-  }
-
-  .coach__item:last-child {
-    margin-right: 30px;
   }
 
   .coach__overlay {
@@ -175,16 +171,24 @@
     width: 166px;
   }
 
+  .slick-list {
+    margin-left: 30px;
+  }
+
+  .slick-slide {
+    width: 298px;
+  }
+
   .coach__button {
     top: 218px;
   }
 
-  .coach__button--right {
-    left: 626px;
+  .coach__button--next  {
+    right: 5px;
   }
 
-  .coach__button--left {
-    left: -22px;
+  .coach__button--prev {
+    left: 5px;
   }
 }
 
@@ -195,14 +199,19 @@
   }
 
   .coach__box {
-    width: 286px;
+    width: 290px;
   }
 
   .coach__box h2 {
+    width: 290px;
     margin-bottom: 42px;
 
     font-size: 32px;
     line-height: 32px;
+  }
+
+  .coach__list {
+    width: 286px;
   }
 
   .coach__item {
@@ -224,18 +233,22 @@
     width: 166px;
   }
 
+  .slick-slide {
+    width: 256px;
+  }
+
   .coach__button {
-    top: 204px;
+    top: 203px;
 
     width: 15px;
     height: 15px;
   }
 
-  .coach__button--right {
-    left: 270px;
+  .coach__button--next {
+    right: 3px;
   }
 
-  .coach__button--left {
-    left: 0;
+  .coach__button--prev {
+    left: 3px;
   }
 }

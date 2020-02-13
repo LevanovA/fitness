@@ -30,6 +30,10 @@
   text-decoration: none;
   color: $complementary-color;
   letter-spacing: 0.03em;
+
+  &:hover {
+    opacity: 0.5;
+  }
 }
 
 .promo__box {
@@ -98,6 +102,10 @@
   color: $complementary-color;
   text-decoration: none;
   text-transform: uppercase;
+
+  &:hover {
+    opacity: 0.5;
+  }
 }
 
 .promo__button {

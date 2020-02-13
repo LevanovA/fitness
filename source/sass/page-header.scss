@@ -1,6 +1,9 @@
 .page-header {
   padding-top: 30px;
-  background:radial-gradient(33.97% 69.22% at 16.03% 39.06%, #003D85 99.48%, #B80027 99.03%);
+  background: radial-gradient(33.97% 69.22% at 16.03% 39.06%, #003D85 99.48%, #B80027 99.03%);
+  background-image: url(../img/promo-gradient-desktop.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 
 @media (max-width: $tablet-width) {

@@ -41,10 +41,19 @@
   margin: 0;
   margin-bottom: -2px;
   padding-bottom: 10px;
+  outline: none;
   cursor: pointer;
+
+  &:hover {
+    opacity: 0.5;
+  }
+
+  &:focus {
+    opacity: 0.5;
+  }
 }
 
-.subscription__months--active {
+.subscription__month--active {
   border-bottom: 2px solid #D10A42;
 }
 
@@ -158,6 +167,26 @@
 
 .subscription__button {
   margin: 0 auto;
+}
+
+// .subscription__plans--one {
+//   display: flex;
+// }
+
+// .subscription__plans--six {
+//   display: none;
+// }
+
+// .subscription__plans--twelve {
+//   display: none;
+// }
+
+.subscription__plans--active {
+  display: flex;
+}
+
+.subscription__plans--none {
+  display: none;
 }
 
 @media (max-width: $tablet-width) {
