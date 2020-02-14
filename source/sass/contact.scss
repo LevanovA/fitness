@@ -58,6 +58,10 @@
 .contact__item a {
   color: $main-color;
   text-decoration: none;
+
+  &:hover {
+    opacity: 0.5;
+  }
 }
 
 .contact__vertical {

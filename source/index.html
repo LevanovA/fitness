@@ -13,7 +13,7 @@
     <section class="promo">
       <div class="promo__info">
         <a href="#">Supergym</a>
-        <a href="tel:+8-800-555-55-55">8-800-555-55-55</a>
+        <a href="tel:8-800-555-55-55">8-800-555-55-55</a>
       </div>
       <div class="promo__box">
         <div class="promo__name">
@@ -482,40 +482,11 @@
     </div>
   </footer>
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
-  <script type="text/javascript" src="slick/slick.min.js"></script>
-  <script type="text/javascript">
-    $(document).ready(function(){
-      $('.coach__list').slick({
-        dots: false,
-        infinite: false,
-        speed: 500,
-        nextArrow: document.querySelector('.coach__button--next'),
-        prevArrow: document.querySelector('.coach__button--prev'),
-        slidesToShow: 4,
-        slidesToScroll: 4,
-        variableWidth: true,
-        responsive: [
-          {
-            breakpoint: 1199,
-            settings: {
-              slidesToShow: 2,
-              slidesToScroll: 2,
-              infinite: false,
-              dots: false
-            }
-          },
-          {
-            breakpoint: 768,
-            settings: {
-              slidesToShow: 1,
-              slidesToScroll: 1
-            }
-          }
-        ]
-      });
-      $('.comment__list').slick();
-    });
-
+  <script src="slick/slick.min.js"></script>
+  <script src="./js/slider.js"></script>
+  <script src="./js/switch.js"></script>
+  <script src="./js/localst.js"></script>
+  <script>
     var linkNav = document.querySelectorAll('[href^="#"]'), //выбираем все ссылки к якорю на странице
         V = 1/4;  // скорость, может иметь дробное значение через точку (чем меньше значение - тем больше скорость)
     for (var i = 0; i < linkNav.length; i++) {
@@ -539,58 +510,6 @@
             }
         }, false);
     }
-
-    var monthOne = document.querySelector('.subscription__month--one');
-    var monthSix = document.querySelector('.subscription__month--six');
-    var monthTwelve = document.querySelector('.subscription__month--twelve');
-    var plansOne = document.querySelector('.subscription__plans--one');
-    var plansSix = document.querySelector('.subscription__plans--six');
-    var plansTwelve = document.querySelector('.subscription__plans--twelve');
-
-    var onClickEffect = function (evt) {
-      switch (true) {
-        case evt.target.classList.contains('subscription__month--one'):
-          plansOne.classList.remove('subscription__plans--none');
-          plansOne.classList.add('subscription__plans--active');
-          monthOne.classList.add('subscription__month--active');
-          plansSix.classList.add('subscription__plans--none');
-          plansSix.classList.remove('subscription__plans--active');
-          monthSix.classList.remove('subscription__month--active');
-          plansTwelve.classList.add('subscription__plans--none');
-          plansTwelve.classList.remove('subscription__plans--active');
-          monthTwelve.classList.remove('subscription__month--active');
-          break;
-        case evt.target.classList.contains('subscription__month--six'):
-          plansSix.classList.remove('subscription__plans--none');
-          plansSix.classList.add('subscription__plans--active');
-          monthSix.classList.add('subscription__month--active');
-          plansOne.classList.add('subscription__plans--none');
-          plansOne.classList.remove('subscription__plans--active');
-          monthOne.classList.remove('subscription__month--active');
-          plansTwelve.classList.add('subscription__plans--none');
-          plansTwelve.classList.remove('subscription__plans--active');
-          monthTwelve.classList.remove('subscription__month--active');
-          break;
-        case evt.target.classList.contains('subscription__month--twelve'):
-          plansTwelve.classList.remove('subscription__plans--none');
-          plansTwelve.classList.add('subscription__plans--active');
-          monthTwelve.classList.add('subscription__month--active');
-          plansSix.classList.add('subscription__plans--none');
-          plansSix.classList.remove('subscription__plans--active');
-          monthSix.classList.remove('subscription__month--active');
-          plansOne.classList.add('subscription__plans--none');
-          plansOne.classList.remove('subscription__plans--active');
-          monthOne.classList.remove('subscription__month--active');
-          break;
-      }
-    };
-
-    monthOne.addEventListener('click', onClickEffect);
-    monthSix.addEventListener('click', onClickEffect);
-    monthTwelve.addEventListener('click', onClickEffect);
-    monthOne.addEventListener('focus', onClickEffect);
-    monthSix.addEventListener('focus', onClickEffect);
-    monthTwelve.addEventListener('focus', onClickEffect);
   </script>
 </body>
 </html>
