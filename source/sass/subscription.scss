@@ -1,6 +1,6 @@
 .subscription {
   padding-top: 118px;
-  padding-bottom: 205px;
+  padding-bottom: 173px;
 
   background-image: url(../img/subscription-barbells-desktop.png), linear-gradient(#F8F9FC 91%, #FFFFFF 91%);
 
@@ -59,6 +59,7 @@
 
 .subscription__plans {
   display: flex;
+  flex-wrap: wrap;
   justify-content: space-between;
 
   width: 1160px;
@@ -70,6 +71,7 @@
   position: relative;
   width: 360px;
 
+  margin-bottom: 30px;
   padding-top: 55px;
   padding-bottom: 60px;
   background-color: $complementary-color;

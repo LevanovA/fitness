@@ -80,6 +80,7 @@
 }
 
 @media (max-width: $tablet-width) {
+
   .contact {
     padding-top: 70px;
     padding-bottom: 42px;
@@ -135,6 +136,10 @@
 
 @media (max-width: $mobile-width) {
 
+  .contact {
+    padding-top: 69px;
+  }
+
   .contact__box {
     width: 290px;
   }
@@ -142,7 +147,7 @@
   .contact__box h2 {
     font-size: 32px;
     line-height: 32px;
-    margin-bottom: 34px;
+    margin-bottom: 35px;
   }
 
   .contact__list {

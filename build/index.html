@@ -483,10 +483,15 @@
   </footer>
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
   <script src="slick/slick.min.js"></script>
+  <script src="./js/localst.js"></script>
+  <script src="./js/jquery.mask.min.js"></script>
   <script src="./js/slider.js"></script>
   <script src="./js/switch.js"></script>
-  <script src="./js/localst.js"></script>
   <script>
+    $(document).ready(function(){
+      $('.lesson__item--tel input').mask('+7 (999) 999 99 99');
+    });
+
     var linkNav = document.querySelectorAll('[href^="#"]'), //выбираем все ссылки к якорю на странице
         V = 1/4;  // скорость, может иметь дробное значение через точку (чем меньше значение - тем больше скорость)
     for (var i = 0; i < linkNav.length; i++) {
